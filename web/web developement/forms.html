@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .cls {
+            background-color: lightgrey;
+            width: 600px;
+            border: 15px solid green;
+            padding: 50px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        
+    @font-face {
+      font-family: "MehrNastaliqWeb";
+      src: url('MehrNastaliqWeb.ttf');
+    }
+
+    .urdu {
+      font-family: "MehrNastaliqWeb";
+      font-size: 25px;
+      color: #ff0000;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="fluid-container">
+        <div class="jumbotron text-center">
+            <h1>Form</h1>
+        </div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+            <button class=navbar-toggler data-toggle="collapse" data-target="#collapse-target">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapse-target">
+
+
+                <!-- Brand/logo -->
+                <a class="navbar-brand" href="https://www.w3schools.com/html/html_images.asp"><img src="/img/oo.jpg"
+                        height="50px" width="50px"></a>
+
+                <!-- Links -->
+                <ul class="navbar-nav ">
+                    <li class="nav-item dropdown">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                Dropdown button
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#">model 1</a>
+                                <a class="dropdown-item" data-toggle="modal" data-target="#click" href="#">model 2</a>
+                                <a class="dropdown-item" data-toggle="modal" data-target="#in" href="#">form 1</a>
+                                <a class="dropdown-item" data-toggle="modal" data-target="#myid" href="#">form 2</a>
+                                <a class="dropdown-item" data-toggle="modal" data-target="#check" href="#"
+                                    href="#">model
+                                    3</a>
+
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:5500/tablestructure.html">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:5500/calculator.html">Link 3</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="cls" class="urdu">
+            <form action="maham.php" class="container" name="myform" method="get" style="background-color: darkcyan">
+                <div class="form-row">
+                    <div class="col"  style="text-align: right">
+                    
+                        <label for="پہلا نام۔">پہلا نام۔</label>
+                        <br>
+                            <input type="text" class="form-control" id="پہلا نام۔" placeholder="پہلا نام۔"
+                                name="پہلا نام۔" required>
+                    </div>
+                       
+                        <div class="form-group col"  style="text-align: right">
+                            
+                                <label for="دوسرا نام۔">دوسرا نام۔</label>
+                                <br>
+                                <input type="text" class="form-control" id="دوسرا نام۔" placeholder="دوسرا نام۔" name="دوسرا نام۔"
+                                    required>
+                            
+                        </div>
+                        </div>
+                        <div class="form-group"  style="text-align: right">
+                            <label for="والد کا نام۔ ">والد کا نام۔ </label>
+                            <br>
+                            <input type="text" class="form-control" id="name" placeholder="والد کا نام۔ " name="والد کا نام۔ "
+                                required>
+                        </div>
+                        <div class="form-group" style="text-align: right">
+                            <label for="شنا ختی کارڑ نمبر۔">شنا ختی کارڑ نمبر</label>
+                            <br>
+                            <input type="text" class="form-control" id="name" placeholder="شنا ختی کارڑ نمبر" name="شنا ختی کارڑ نمبر" required>
+                        </div>
+                        <div class="form-group"  style="text-align: right">
+                            <label for="rollno">رول نمبر۔</label>
+                            <br>
+                            <input type="text" class="form-control" id="name" placeholder="رول نمبر۔" name="رول نمبر۔">
+                        </div>
+                        <div class="form-group"  style="text-align: right">
+                            <label for="gender">gender</label>
+                            <br>
+                            <input type="radio" name="gender" value="آدمی۔">آدمی۔
+                            <input type="radio" name="gender" value="ءورت۔">ءورت۔
+                        </div>
+                        <div class="form-group">
+                            <label for="program">program</label>
+                            <select name="program" class="form-control">
+                                <option value="bscs">bscs</option>
+                                <option value="bsit">bsit</option>
+                                <option value="mcs">mcs</option>
+                            </select>
+
+                        </div>
+                        <div class="form-row">
+                        <div class="form-group col-md-5">
+                            <label for="semester">semester</label>
+                            <select name="semester" class="form-control">
+                                <option value="1st">1st</option>
+                                <option value="2nd">2nd</option>
+                                <option value="3rd">3rd</option>
+                            </select>
+                        </div>
+                            <div class="form-group col-md-5">
+                                <label for="city">city</label>
+                                <select name="city" class="form-control">
+                                    <option value="bahawalpure">bahawalpure</option>
+                                    <option value="lahore">lahore</option>
+                                    <option value="islamabad">islamabad</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="courses">courses</label>
+                                <br>
+                                <input type="checkbox" name="check" value="css">css
+                                <input type="checkbox" name="box" value="java">java
+                                <input type="checkbox" name="checkbox" value="html">html
+                            </div>
+                            <div class="form-group">
+                                <label for="address">ADDRESS</label>
+                                <textarea type="textarea" class="form-control" id="äddress" placeholder="enter address"
+                                    name="address"></textarea>
+                            </div>
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember">i agree on label
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">submit</button>
+                            <div class="container">
+                                    <h2>Colored Spinners</h2>
+                                    <p>Use any <strong>text color utilites</strong> to add a color to the spinner:</p>
+                                                                          
+                                    <div class="spinner-border text-muted"></div>
+                                    <div class="spinner-border text-primary"></div>
+                                    <div class="spinner-border text-success"></div>
+                                    <div class="spinner-border text-info"></div>
+                                    <div class="spinner-border text-warning"></div>
+                                    <div class="spinner-border text-danger"></div>
+                                    <div class="spinner-border text-secondary"></div>
+                                    <div class="spinner-border text-dark"></div>
+                                    <div class="spinner-border text-light"></div>
+                                  </div>
+                                  
+                        
+            </form>
+        </div>
+
+</body>

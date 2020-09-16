@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style>
+    .clss {
+      width: 2000px;
+      height: 500px;
+      margin: 0px;
+    }
+
+    @font-face {
+      font-family: "MehrNastaliqWeb";
+      src: url('font/MehrNastaliqWeb.ttf');
+    }
+
+    .urdu {
+      font-family: "MehrNastaliqWeb";
+      font-size: 25px;
+      color: #ff0000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fluid-container">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+      <button class=navbar-toggler data-toggle="collapse" data-target="#collapse-target">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapse-target">
+
+
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="https://www.w3schools.com/html/html_images.asp"><img src="/img/oo.jpg"
+            height="50px" width="50px"></a>
+
+        <!-- Links -->
+        <ul class="navbar-nav ">
+          <li class="nav-item dropdown">
+            <div class="dropdown">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Dropdown button
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" data-toggle="modal" data-target="#myModal" href="#">model 1</a>
+                <a class="dropdown-item" data-toggle="modal" data-target="#click" href="#">model 2</a>
+                <a class="dropdown-item" data-toggle="modal" data-target="#in" href="#">form 1</a>
+                <a class="dropdown-item" data-toggle="modal" data-target="#myid" href="#">form 2</a>
+                <a class="dropdown-item" data-toggle="modal" data-target="#check" href="#" href="#">model3</a>
+
+              </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/tablestructure.html">Link 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/calculator.html">Link 3</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active clss">
+          <img src="/img/67.jpg" alt="Los Angeles" width="2000" height="500">
+        </div>
+        <div class="carousel-item clss">
+          <img src="/img/oo.jpg" alt="Chicago" width="2000" height="500">
+        </div>
+        <div class="carousel-item clss">
+          <img src="/img/pp.jpg" alt="New York" width="2000" height="500">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <div class="containor">
+      <img src="/img/pp.jpg" class="rounded-circle">
+      <img src="/img/pp.jpg" class="rounded-circle">
+    </div>
+    <div style="text-align:right" class="urdu">
+      یرا نام ماہم ہے.میں ایک طالب ءلم ہوں. میں یہا کمپیوٹر پڑھتی یوں
+
+      میرا نام ماہم ہے.میں ایک طالب ءلم ہوں. میں یہا کمپیوٹر پڑھتی یوں
+
+      یرا نام ماہم ہے.میں ایک طالب ءلم ہوں. میں یہا کمپیوٹر پڑھتی یوں یرا نام ماہم ہے.میں ایک طالب ءلم ہوں. میں یہا
+      کمپیوٹر پڑھتی یوں
+    </div>
+  </div>
+
+</body>
